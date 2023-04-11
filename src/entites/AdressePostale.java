@@ -1,15 +1,15 @@
 package entites;
 
 public class AdressePostale {
-	int numRue;
-	String label;
-	int codePostal;
+	int numero;
+	String libelle;
+	int codePostale;
 	String ville;
 	@Override
 	public String toString() {
-		return "AdressePostale [numRue=" + numRue + ", label=" + label + ", codePostal=" + codePostal + ", ville="
+		return "AdressePostale [numero=" + numero + ", libelle=" + libelle + ", codePostale=" + codePostale + ", ville="
 				+ ville + "]";
 	}
-	
+
 
 }
