@@ -6,11 +6,11 @@ public class AdressePostale {
 	int codePostale;
 	String ville;
 	
-	AdressePostale(int num, String label, int cp, String v){
-		codePostale = cp;
-		numero = num;
-		libelle = label;
-		ville = v;
+	AdressePostale(int nvnum, String nvlib, int nvcode, String nvville){
+		numero = nvnum;
+		libelle = nvlib;
+		codePostale = nvcode;
+		ville = nvville;
 	}
 	@Override
 	public String toString() {

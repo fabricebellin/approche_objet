@@ -4,15 +4,19 @@ import entites2.Personne;
 
 public class TestPersonne {
 	public static void main(String[] args) {
-		AdressePostale adr1 = new AdressePostale(3, "Rue du marché", 34000, "Montpellier");
+		AdressePostale adr1 = new AdressePostale(20, "rue des Lilas", 44000, "Nantes");
+		AdressePostale adr2 = new AdressePostale(15, "rue des Tulipes", 34000, "Montpellier");
 
 		
-		Personne p = new Personne("Proust", "Marcel");
-		Personne n = new Personne("Proust", "Marcel", adr1);
+		Personne p1 = new Personne("Proust", "Marcel", adr1);
+		Personne p2 = new Personne("Verne", "Jules", adr2);
 
 
-		System.out.println(p);
-		System.out.println(n);
+
+	
+		System.out.println(p1);
+		System.out.println(p2);
+
 		
 	}
 	
