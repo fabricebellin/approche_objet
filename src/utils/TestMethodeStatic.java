@@ -5,20 +5,14 @@ import java.lang.Integer;
 public class TestMethodeStatic {
 
 	public static void main(String[] args) {
-		String chaine = "4";
-		System.out.println(chaine);
+		String chaine = "12";	
+		int valeur = Integer.parseInt(chaine);
+				
+		int a = 124;
+		int b = 178;
 
 		
-		Integer chaineInt = Integer.valueOf(chaine);
-		
-		System.out.println(chaineInt);
-		
-		int a = 3;
-		int b = 5;
-		
-		int max = Integer.max(a, b);
-		
-		System.out.println("Le maximum entre " + a + " et " + b + " est " + max);
+		System.out.println(Integer.max(a, b));
 
 	}
 
