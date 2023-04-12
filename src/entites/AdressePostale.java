@@ -6,7 +6,7 @@ public class AdressePostale {
 	int codePostale;
 	String ville;
 	
-	AdressePostale(int nvnum, String nvlib, int nvcode, String nvville){
+	public AdressePostale(int nvnum, String nvlib, int nvcode, String nvville){
 		numero = nvnum;
 		libelle = nvlib;
 		codePostale = nvcode;
