@@ -13,7 +13,7 @@ public class TestMethodeStatic {
 
 		
 		System.out.println(Integer.max(a, b));
-
+		System.out.println(Double.MAX_VALUE);
 	}
 
 }
