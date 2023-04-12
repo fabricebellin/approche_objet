@@ -10,45 +10,45 @@ public class Personne {
 	public AdressePostale adresse;
 	
 	//Constructeur
-	public Personne(String nom, String prenom, AdressePostale adresse) {
+	public Personne(String nom, String prenom) {
 		this.nom = nom;
 		this.prenom = prenom;
-		this.adresse = adresse;
 	}
 	
+//	public Personne(String nom, String prenom, AdressePostale adresse) {
+//		this.nom = nom;
+//		this.prenom = prenom;
+//		this.adresse = adresse
+//	}
 	
-	public void afficherNom() {
-	    String[] partNom = this.nom.split(" ");
-	    String nomFam = partNom[partNom.length - 1].toUpperCase();
-	    System.out.println(nomFam + " " + prenom);
-	}
-
 	
-	public void variableInstance(String nouvNom) {
-		 this.nom = nouvNom;
-	}
-	
-	public void modifierPrenom(String nouvPren) {
-		 this.prenom = nouvPren;
+	public void afficher() {
+	    System.out.println(nom.toUpperCase()+ " " + prenom);
 	}
 	
-
-	public void modifierAdresse(AdressePostale nouvAdress){
-		this.adresse =  nouvAdress;
+	//on appelle ce type de méthode un setter
+	public void setNom(String nvnom) {
+		nom = nvnom;
 	}
 	
-	public String returnNom() {
-		
+	public void setPrenom(String nvprenom) {
+		prenom = nvprenom;
+	}
+	
+	public void setAdresse(AdressePostale nvadresse) {
+		adresse = nvadresse;
+	}
+	
+	//on appelle ce type de méthode un getter
+	public String getNom() {
 		return this.nom;
 	}
 	
-	public String returnPren() {
-		
+	public String getPrenom() {
 		return this.prenom;
 	}
 	
-	public AdressePostale returnAdresse() {
-		
+	public AdressePostale getAdresse() {
 		return this.adresse;
 	}
 	
