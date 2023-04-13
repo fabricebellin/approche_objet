@@ -17,6 +17,12 @@ public class Cercle {
 		double surface = Math.PI * rayon * rayon;
 	    return surface;
 	}
+
+	@Override
+	public String toString() {
+		return " rayon : " + rayon;
+	}
+	
 	
 	
 }

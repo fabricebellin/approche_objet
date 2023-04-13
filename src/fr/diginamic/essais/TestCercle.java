@@ -1,5 +1,6 @@
 package fr.diginamic.essais;
 import entites.Cercle;
+import fr.diginamic.utils.CercleFactory;
 
 public class TestCercle {
 
@@ -13,6 +14,14 @@ public class TestCercle {
 		System.out.println("----------------------");
 		System.out.println("Périmètre cercle 2: " +c2.perimetre());
 		System.out.println("Surface cercle 1: " + c2.surface());
+		System.out.println("----------------------");
+
+		
+	    Cercle cercle = CercleFactory.createCercle(4.0);
+		System.out.println("Cercle 3 créer avec un" + cercle);
+		System.out.println("Cercle 3 créer avec un périmètre de : " + cercle.perimetre());
+		System.out.println("Cercle 3 créer avec une surface de : " + cercle.perimetre());
+
 
 
 	}
