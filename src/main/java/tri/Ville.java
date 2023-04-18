@@ -42,7 +42,7 @@ public class Ville{
 
 	@Override
 	public String toString() {
-		return "Ville [nom=" + nom + ", nbHabitant=" + nbHabitant + "]";
+		return " nom=" + nom + ", nbHabitant=" + nbHabitant;
 	}
 	
 
