@@ -30,7 +30,6 @@ public class TestSetString {
             }
         }
         System.out.println(set);
-
         System.out.println(paysMax);
         set.remove(paysMax);
         System.out.println(set);
