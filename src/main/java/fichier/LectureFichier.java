@@ -11,10 +11,13 @@ import java.util.List;
 public class LectureFichier {
 
 	public static void main(String[] args) throws IOException {
+		
+		//Lire fichier avec instanciation
 	    List<Ville> listVille= new ArrayList<>();
 	    Path pathFile = Paths.get("/Users/pamela/Documents/recensement.csv");
 
 	    List<String> lines = Files.readAllLines(pathFile, StandardCharsets.UTF_8);
+	    
 	    lines.remove(0);
 	    for(String ligne : lines) {
 	        String[] tokens = ligne.split(";");
@@ -24,6 +27,10 @@ public class LectureFichier {
 	    }
 
 	    System.out.println(listVille);
+	    
+	    //Generer fichier
+	    
+	    
 	}
 
 
