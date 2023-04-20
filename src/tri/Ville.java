@@ -4,15 +4,27 @@ package tri;
 public class Ville{
 	String nom;
 	Integer nbHabitant;
-	
-	
-	public Ville(String nom, Integer nbHabitant) {
+	Continent continent;
+
+	public Ville(String nom, Integer nbHabitant, Continent continent) {
+		super();
 		this.nom = nom;
 		this.nbHabitant = nbHabitant;
+		this.continent = continent;
 	}
+
 	
-	
-	
+	public Continent getContinent() {
+		return continent;
+	}
+
+
+
+	public void setContinent(Continent continent) {
+		this.continent = continent;
+	}
+
+
 	public String getNom() {
 		return nom;
 	}
@@ -37,28 +49,28 @@ public class Ville{
 
     @Override
     public boolean equals(Object obj) {
-    	 if (this == obj) { // Vérifier si l'objet est le même
+    	 if (this == obj) { 
              return true;
          }
-         if (obj == null) { // Vérifier si l'objet est null
+         if (obj == null) { 
              return false;
          }
-         if (getClass() != obj.getClass()) { // Vérifier si les classes sont différentes
+         if (getClass() != obj.getClass()) { 
              return false;
          }
-         Ville other = (Ville) obj; // Cast l'objet en Ville
-         if (nbHabitant == null) { // Vérifier si les nombres d'habitants sont nulls
+         Ville other = (Ville) obj; 
+         if (nbHabitant == null) { 
              if (other.nbHabitant != null) {
                  return false;
              }
-         } else if (!nbHabitant.equals(other.nbHabitant)) { // Vérifier si les nombres d'habitants sont différents
+         } else if (!nbHabitant.equals(other.nbHabitant)) { 
              return false;
          }
-         if (nom == null) { // Vérifier si les noms sont nulls
+         if (nom == null) { 
              if (other.nom != null) {
                  return false;
              }
-         } else if (!nom.equals(other.nom)) { // Vérifier si les noms sont différents
+         } else if (!nom.equals(other.nom)) { 
              return false;
          }
          return true;
@@ -68,7 +80,7 @@ public class Ville{
 
 	@Override
 	public String toString() {
-		return " nom=" + nom + ", nbHabitant=" + nbHabitant;
+		return " nom=" + nom + ", nbHabitant=" + nbHabitant +"  " + continent.getLibelle();
 	}
 	
 	
