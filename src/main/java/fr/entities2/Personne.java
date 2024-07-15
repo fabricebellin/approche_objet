@@ -35,8 +35,4 @@ public class Personne {
     public void setAdressePostale(AdressePostale adressePostale) {
         this.adressePostale = adressePostale;
     }
-
-    public void afficherIdentite(){
-        System.out.println(nom + " " + prenom.toUpperCase());
-    }
 }
