@@ -15,6 +15,8 @@ public class TestMethodeStatic {
         System.out.println("Maximum entre " + a + " et " + b + " : " + Integer.max(a, b));
     }
 
+
+
 }
 
 
