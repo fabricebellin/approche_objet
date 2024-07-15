@@ -1,45 +1,17 @@
 package entites;
 
-public class AdressePostale {
+public class TestAdressePostale {
+    public static void main(String[] args) {
+        //première adresse
+        AdressePostale adressePostale1 = new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton");
+        //première adresse
+        AdressePostale adressePostale2 = new AdressePostale(120,"chemin de bois mesnil", "82290", "Montbeton");
 
-    private int numeroRue;
-    private String libelleRue;
-    private String codepostal;
-    private String ville;
-
-    //constructeur
-    public AdressePostale(int numeroRue, String libelleRue, String codepostal, String ville) {
-        this.numeroRue = numeroRue;
-        this.libelleRue = libelleRue;
-        this.codepostal = codepostal;
-        this.ville = ville;
+        affichageAdresse(adressePostale1);
+        affichageAdresse(adressePostale2);
     }
 
-    public int getNumeroRue() {
-        return this.numeroRue;
-    }
-    public void setNumeroRue(int numeroRue) {
-        this.numeroRue = numeroRue;
-    }
-
-    public String getLibelleRue() {
-        return this.libelleRue;
-    }
-    public void setLibelleRue(String libelleRue) {
-        this.libelleRue = libelleRue;
-    }
-
-    public String getCodepostal() {
-        return this.codepostal;
-    }
-    public void setCodepostal(String codepostal) {
-        this.codepostal = codepostal;
-    }
-
-    public String getVille() {
-        return this.ville;
-    }
-    public void setVille(String ville) {
-        this.ville = ville;
+    public static void affichageAdresse(AdressePostale adressePostale) {
+        System.out.println("adresse :\n " + adressePostale.getNumeroRue() + ", " + adressePostale.getLibelleRue() + ", " + adressePostale.getCodepostal() + ", " + adressePostale.getVille() + ".");
     }
 }
