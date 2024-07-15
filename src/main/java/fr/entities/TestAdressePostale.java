@@ -2,16 +2,10 @@ package entites;
 
 public class TestAdressePostale {
     public static void main(String[] args) {
-        //première adresse
-        AdressePostale adressePostale1 = new AdressePostale(61,"boulevard carrière poissonnière", "34750", "Villeneuve-Lès-Maguelone");
-        //première adresse
-        AdressePostale adressePostale2 = new AdressePostale(420,"chemin de la mosson", "34750", "Villeneuve-Lès-Maguelone");
+        AdressePostale adresse1 = new AdressePostale(120, "Rue de Tulipes", 14500, "Vire");
+        AdressePostale adresse2 = new AdressePostale(5, "des Maréchaux", 44100, "Nantes");
 
-        affichageAdresse(adressePostale1);
-        affichageAdresse(adressePostale2);
-    }
-
-    public static void affichageAdresse(AdressePostale adressePostale) {
-        System.out.println("adresse :\n " + adressePostale.getNumeroRue() + ", " + adressePostale.getLibelleRue() + ", " + adressePostale.getCodepostal() + ", " + adressePostale.getVille() + ".");
+        System.out.println("Adresse 1: " + adresse1.numeroRue + " " + adresse1.libelleRue + ", " + adresse1.codePostal + " " + adresse1.ville);
+        System.out.println("Adresse 2: " + adresse2.numeroRue + " " + adresse2.libelleRue + ", " + adresse2.codePostal + " " + adresse2.ville);
     }
 }

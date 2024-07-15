@@ -4,16 +4,13 @@ import entites2.Personne;
 
 public class TestPersonne {
     public static void main(String[] args) {
-        //Personne1
-        Personne personne1 = new Personne("Bueno-Barthe", "Gaël", new AdressePostale(61,"boulevard carrière poissonnière", "34750", "Villeneuve-Lés-Maguelone"));
-        //Personne2
-        Personne personne2 = new Personne("Barthe-Bueno", "Nathan", new AdressePostale(420,"chemin de la mosson", "34750", "Villeneuve-Lés-Maguelone"));
-        affichagePersonne(personne1);
-        affichagePersonne(personne2);
-    }
-    public static void affichagePersonne(Personne personne){
-        System.out.println(personne.getNom() + " " + personne.getPrenom() + ", " + personne.getAdressePostale().getNumeroRue() + " " + personne.getAdressePostale().getLibelleRue() + ", " + personne.getAdressePostale().getCodepostal() + ", " + personne.getAdressePostale().getVille() + ".");
+        AdressePostale adresse1 = new AdressePostale(120, "Rue de Tulipes", 14500, "Vire");
+        AdressePostale adresse2 = new AdressePostale(5, "des Maréchaux", 44100, "Nantes");
 
-    }
+        Personne personne1 = new Personne("Dupont", "Jean", adresse1);
+        Personne personne2 = new Personne("Martin", "Anne", adresse2);
 
+        System.out.println("Personne 1: " + personne1.nom + " " + personne1.prenom + ", Adresse: " + personne1.adresse.numeroRue + " " + personne1.adresse.libelleRue + ", " + personne1.adresse.codePostal + " " + personne1.adresse.ville);
+        System.out.println("Personne 2: " + personne2.nom + " " + personne2.prenom + ", Adresse: " + personne2.adresse.numeroRue + " " + personne2.adresse.libelleRue + ", " + personne2.adresse.codePostal + " " + personne2.adresse.ville);
+    }
 }
