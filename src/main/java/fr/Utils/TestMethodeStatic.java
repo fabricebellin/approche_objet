@@ -1,4 +1,4 @@
-package utils;
+package Utils;
 
 public class TestMethodeStatic {
 
@@ -17,6 +17,3 @@ public class TestMethodeStatic {
     }
 
 }
-
-
-
