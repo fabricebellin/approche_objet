@@ -7,7 +7,7 @@ public class TestPersonne {
         //Personne1
         Personne personne1 = new Personne("Bellin", "Fabrice", new AdressePostale(175,"chemin de bois mesnil", "82290", "montebton"));
         //Personne2
-        Personne personne2 = new Personne("Bellin", "Mireille", new AdressePostale(175,"chemin de bois mesnil", "82290", "montebton"));
+        Personne personne2 = new Personne("Bellin", "Mireille", new AdressePostale(176,"chemin de bois mesnil", "82290", "montebton"));
         affichagePersonne(personne1);
         affichagePersonne(personne2);
     }
