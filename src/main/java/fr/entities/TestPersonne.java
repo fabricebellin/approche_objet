@@ -5,9 +5,9 @@ import entites2.Personne;
 public class TestPersonne {
     public static void main(String[] args) {
         //Personne1
-        Personne personne1 = new Personne("Bueno-Barthe", "Gaël", new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton"));
+        Personne personne1 = new Personne("Bellin", "Fabrice", new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton"));
         //Personne2
-        Personne personne2 = new Personne("Barthe-Bueno", "Nathan", new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton"));
+        Personne personne2 = new Personne("Bellin", "Elise", new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton"));
 
         affichagePersonne(personne1);
         affichagePersonne(personne2);
