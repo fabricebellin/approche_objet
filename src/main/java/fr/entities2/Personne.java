@@ -22,10 +22,6 @@ public class Personne {
         this.nom = nom;
     }
 
-    public void afficherIdentite(){
-        System.out.println(prenom+" "+nom.toUpperCase());
-    }
-
     public String getPrenom() {
         return prenom;
     }
@@ -39,6 +35,8 @@ public class Personne {
     public void setAdressePostale(AdressePostale adressePostale) {
         this.adressePostale = adressePostale;
     }
-    
+
+    public void afficherIdentite(){
+        System.out.println(nom + " " + prenom.toUpperCase());
     }
 }
