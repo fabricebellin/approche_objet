@@ -6,6 +6,7 @@ public class TestMethodeStatic {
         String chaine = "12";
         int chaineConvertie = Integer.parseInt(chaine);
 
+
         int minRandom = 1;
         int maxRandom = 100;
 
