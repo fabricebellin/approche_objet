@@ -1,24 +1,35 @@
-package fr.entities.listes;
+package listes;
+
+import java.util.List;
+import java.util.ArrayList;
 
 public class FusionListe {
 
-    public static void main(String args[]) {
-        // ... (initialisation de liste1 et liste2, inchangée) ...
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        List<String> liste1 = new ArrayList<String>();
+        liste1.add("Rouge");
+        liste1.add("Vert");
+        liste1.add("Orange");
 
-        List<String> liste3 = new ArrayList<String>(); // Création de liste3
+        List<String> liste2 = new ArrayList<String>();
+        liste2.add("Blanc");
+        liste2.add("Bleu");
+        liste2.add("Orange");
 
-        // Ajout des éléments de liste1 à liste3 (avec boucle for-each)
-        for (String couleur : liste1) {
-            liste3.add(couleur);
+        List<String> liste3 = new ArrayList<String>();
+        for(int i=0; i<liste1.size(); i++) {
+            liste3.add(liste1.get(i));
+        }
+        for(int i=0; i<liste2.size(); i++) {
+            liste3.add(liste2.get(i));
         }
 
-        // Ajout des éléments de liste2 à liste3 (avec boucle for-each)
-        for (String couleur : liste2) {
-            liste3.add(couleur);
+        System.out.println("Liste 3");
+        for(int i=0; i<liste3.size(); i++) {
+            System.out.println(liste3.get(i));
         }
-
-        // Affichage du résultat
-        System.out.println("Liste fusionnée (liste3): " + liste3);
     }
+
 }
 
