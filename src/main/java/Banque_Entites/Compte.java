@@ -19,7 +19,7 @@ public class Compte {
 
     @Override
     public String toString() {
-        return "Solde du compte n°" + this.numeroCompte + " : " + this.soldeCompte + " euros"; // Correction de la concaténation et des espaces
+        return "Solde du compte n°" + this.numeroCompte + " : " + this.soldeCompte + " euros";
     }
 }
 
