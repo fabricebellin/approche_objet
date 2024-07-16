@@ -1,7 +1,7 @@
 package Banque_Entites;
 
 public class Compte {
-    private int numeroCompte;
+    private final int numeroCompte;
     private int soldeCompte;
 
     public Compte(int numeroCompte, int soldeCompte) {
@@ -9,23 +9,17 @@ public class Compte {
         this.soldeCompte = soldeCompte;
     }
 
-    public int getNumeroCompte() {
-        return this.numeroCompte;
-    }
-
-    public int getSoldeCompte() {
-        return this.soldeCompte;
-    }
-
     public void debiter(int debit) {
-        this.soldeCompte -= debit;
+        this.soldeCompte -= debit; // Soustraire le débit du solde
     }
 
     public void crediter(int credit) {
         this.soldeCompte += credit;
     }
 
+    @Override
     public String toString() {
-        return "Solde du compte n° " + this.numeroCompte + " : " + this.soldeCompte + " euros";
+        return "Solde du compte n°" + this.numeroCompte + " : " + this.soldeCompte + " euros"; // Correction de la concaténation et des espaces
     }
 }
+
