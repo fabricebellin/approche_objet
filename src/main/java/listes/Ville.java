@@ -1,33 +1,56 @@
-class Ville {
-    String nom;
-    int nbHabitants;
 
-    public Ville(String nom, int nbHabitants) {
-        this.nom = nom;
-        this.nbHabitants = nbHabitants;
+package listes;
+
+import java.util.Objects;
+
+public class Ville {
+
+    private String name;
+    private double nbrHabitant;
+
+    public Ville(String name, double nbrHabitant) {
+        this.name = name;
+        this.nbrHabitant = nbrHabitant;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true; // Même référence
-        if (obj == null || getClass() != obj.getClass()) return false; // Types différents
-        Ville ville = (Ville) obj;
-        return nbHabitants == ville.nbHabitants && nom.equals(ville.nom); // Comparaison des attributs
+    public boolean equals(Object object) {
+
+        if (!(object instanceof Ville ville)) return false;
+
+        // avec cette facon avec Objects.equals il va gérer le cas ou null
+        // return Double.compare(nbrHabitant, ville.nbrHabitant) == 0 && Objects.equals(name, ville.name);
+
+        Ville other = (Ville) object;
+
+        return this.name.equals(other.getName()) && this.nbrHabitant == other.getNbrHabitant();
+
     }
-}
 
-public class TestEquals {
-    public static void main(String[] args) {
-        Ville ville1 = new Ville("Paris", 2_165_423);
-        Ville ville2 = new Ville("Paris", 2_165_423);
-        Ville ville3 = new Ville("Lyon", 500_715);
 
-        // Test avec equals
-        System.out.println("ville1.equals(ville2): " + ville1.equals(ville2)); // true
-        System.out.println("ville1.equals(ville3): " + ville1.equals(ville3)); // false
-
-        // Test avec ==
-        System.out.println("ville1 == ville2: " + (ville1 == ville2)); // false
-        System.out.println("ville1 == ville1: " + (ville1 == ville1)); // true
+    @Override
+    public String toString() {
+        return "Ville{" +
+                "name='" + name + '\'' +
+                ", nbrHabitant=" + nbrHabitant +
+                '}';
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getNbrHabitant() {
+        return nbrHabitant;
+    }
+
+    public void setNbrHabitant(double nbrHabitant) {
+        this.nbrHabitant = nbrHabitant;
+    }
+
+
 }
