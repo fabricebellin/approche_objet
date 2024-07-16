@@ -1,13 +1,21 @@
 package listes;
 
+import fr.listes.Ville;
+
 public class TestVilles {
 
     public static void main(String[] args) {
 
-        Ville city1 = new Ville("Montpellier", 123698);
-        Ville city2 = new Ville("Montpellier", 123698);
+        Ville ville1 = new Ville("Carcassonne", 47800);
+        Ville ville2 = new Ville("Carcassonne", 47800);
+        Ville ville3 = new Ville("Carcassonne", 47800);
 
-        boolean result = city1.equals(city2);
-        System.out.println(result);
+        System.out.println(ville1.equals(ville2));
+        ville2.setNom("Nice");
+        System.out.println(ville1.equals(ville2));
+        ville3.setNbHabitants(343000);
+        System.out.println(ville1.equals(ville3));
+
     }
+
 }

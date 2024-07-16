@@ -1,56 +1,41 @@
-
 package listes;
-
-import java.util.Objects;
 
 public class Ville {
 
-    private String name;
-    private double nbrHabitant;
+    protected String nom;
+    protected int nbHabitants;
 
-    public Ville(String name, double nbrHabitant) {
-        this.name = name;
-        this.nbrHabitant = nbrHabitant;
+    public Ville() {}
+
+    public String getNom() {
+        return this.nom;
     }
 
-    @Override
-    public boolean equals(Object object) {
-
-        if (!(object instanceof Ville ville)) return false;
-
-        // avec cette facon avec Objects.equals il va gérer le cas ou null
-        // return Double.compare(nbrHabitant, ville.nbrHabitant) == 0 && Objects.equals(name, ville.name);
-
-        Ville other = (Ville) object;
-
-        return this.name.equals(other.getName()) && this.nbrHabitant == other.getNbrHabitant();
-
+    public int getNbHabitants() {
+        return this.nbHabitants;
     }
 
-
-    @Override
-    public String toString() {
-        return "Ville{" +
-                "name='" + name + '\'' +
-                ", nbrHabitant=" + nbrHabitant +
-                '}';
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
-    public String getName() {
-        return name;
+    public void setNbHabitants(int population) {
+        this.nbHabitants = population;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Ville(String nom, int population) {
+        this.setNom(nom);
+        this.setNbHabitants(population);
     }
 
-    public double getNbrHabitant() {
-        return nbrHabitant;
+    public boolean equals(Object another) {
+        if(another instanceof Ville) {
+            Ville otherVille = (Ville) another;
+            return otherVille.getNom() == this.getNom() && otherVille.getNbHabitants() == this.getNbHabitants();
+        }
+        else {
+            return false;
+        }
     }
-
-    public void setNbrHabitant(double nbrHabitant) {
-        this.nbrHabitant = nbrHabitant;
-    }
-
 
 }
