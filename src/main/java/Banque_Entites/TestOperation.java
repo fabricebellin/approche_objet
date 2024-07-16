@@ -1,6 +1,6 @@
-package Banque_Entites; //
+package Banque_Entites; 
 
-public class TestOperation { // Correction de la typo dans le nom de la classe
+public class TestOperation { 
     public static void main(String[] args) {
         Operation[] listeOperations = new Operation[6];
 
