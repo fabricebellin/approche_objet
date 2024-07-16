@@ -2,7 +2,7 @@ package Banque_Entites;
 
 public class CompteTaux extends Compte{
 
-    private int tauxRemuneration;
+    private final int tauxRemuneration;
 
     public CompteTaux(int numeroCompte, int soldeCompte, int tauxRemuneration) {
         super(numeroCompte, soldeCompte);
