@@ -1,4 +1,4 @@
-package listes;
+package fr.entities.listes;
 
 import fr.listes.Ville;
 

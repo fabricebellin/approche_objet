@@ -1,23 +1,34 @@
-package entities2;
+package listes;
 
-import entities2.Personne;
+import java.util.List;
 import java.util.ArrayList;
 
-public class TestPersonne {
+public class FusionListe {
+
     public static void main(String[] args) {
-        Personne personne1 = new Personne("Marya", "Conduché", new AdressePostale(1, "rue Boussairolles", 34000, "Montpellier"));
-        Personne personne2 = new Personne("Damien", "Mouchagues", new AdressePostale(81, "avenue de la Forêt", 33740, "Arès"));
-        personne1.setNom("Mario");
-        personne2.setAdresse(new AdressePostale(1, "rue Boussairolles", 34000, "Montpellier"));
-        ArrayList<Personne> tabPersonnes = new ArrayList<Personne>();
-        tabPersonnes.add(personne1);
-        tabPersonnes.add(personne2);
-        for(Personne unePersonne : tabPersonnes) {
-            unePersonne.getNomEtPrenomEnMajuscules();
-            System.out.println(unePersonne.getNom() + " " + unePersonne.getPrenom() + " - " + unePersonne.getAdresse().getNumeroDeRue() +
-                    " " + unePersonne.getAdresse().getLibelleRue() + " " + unePersonne.getAdresse().getCodePostal() + " " +
-                    unePersonne.getAdresse().getVille());
+        // TODO Auto-generated method stub
+        List<String> liste1 = new ArrayList<String>();
+        liste1.add("Rouge");
+        liste1.add("Vert");
+        liste1.add("Orange");
+
+        List<String> liste2 = new ArrayList<String>();
+        liste2.add("Blanc");
+        liste2.add("Bleu");
+        liste2.add("Orange");
+
+        List<String> liste3 = new ArrayList<String>();
+        for(int i=0; i<liste1.size(); i++) {
+            liste3.add(liste1.get(i));
+        }
+        for(int i=0; i<liste2.size(); i++) {
+            liste3.add(liste2.get(i));
         }
 
+        System.out.println("Liste 3");
+        for(int i=0; i<liste3.size(); i++) {
+            System.out.println(liste3.get(i));
+        }
     }
+
 }

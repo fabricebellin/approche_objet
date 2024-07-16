@@ -1,4 +1,4 @@
-package entities2;
+package entites2;
 
 import entites.AdressePostale;
 

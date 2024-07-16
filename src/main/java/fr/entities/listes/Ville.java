@@ -1,4 +1,4 @@
-package listes;
+package fr.entities.listes;
 
 public class Ville {
 
