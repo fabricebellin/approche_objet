@@ -1,17 +1,20 @@
-package entites;
+package entities;
+
+//Les ArrayList permettent de gérer des tableaux à grandeur dynamique sur Java
+import java.util.ArrayList;
 
 public class TestAdressePostale {
+
     public static void main(String[] args) {
-        //première adresse
-        AdressePostale adressePostale1 = new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton");
-        //première adresse
-        AdressePostale adressePostale2 = new AdressePostale(175,"chemin de bois mesnil", "82290", "Montbeton");
-
-        affichageAdresse(adressePostale1);
-        affichageAdresse(adressePostale2);
+        AdressePostale adresse1 = new AdressePostale(1, "rue Boussairolles", 34000, "Montpellier");
+        AdressePostale adresse2 = new AdressePostale(81, "avenue de la Forêt", 33740, "Arès");
+        ArrayList<AdressePostale> tabAdresses = new ArrayList<AdressePostale>();
+        tabAdresses.add(adresse1);
+        tabAdresses.add(adresse2);
+        for(AdressePostale uneAdresse : tabAdresses) {
+            System.out.println(uneAdresse.getNumeroDeRue() + " " + uneAdresse.getLibelleRue() + " " +
+                    uneAdresse.getCodePostal() + " " + uneAdresse.getVille());
+        }
     }
 
-    public static void affichageAdresse(AdressePostale adressePostale) {
-        System.out.println("adresse :\n " + adressePostale.getNumeroRue() + ", " + adressePostale.getLibelleRue() + ", " + adressePostale.getCodepostal() + ", " + adressePostale.getVille() + ".");
-    }
 }

@@ -1,46 +1,40 @@
-
-package entites;
+package Banque_Entites.listes;
 
 public class AdressePostale {
 
-    private int numeroRue;
+    private int numeroDeRue;
     private String libelleRue;
-    private String codepostal;
+    private int codePostal; // Type int pour le code postal
     private String ville;
 
-    //constructeur
-    public AdressePostale(int numeroRue, String libelleRue, String codepostal, String ville) {
-        this.numeroRue = numeroRue;
+    // Constructeur
+    public AdressePostale(int numeroDeRue, String libelleRue, int codePostal, String ville) {
+        this.numeroDeRue = numeroDeRue;
         this.libelleRue = libelleRue;
-        this.codepostal = codepostal;
+        this.codePostal = codePostal;
         this.ville = ville;
     }
 
-    public int getNumeroRue() {
-        return this.numeroRue;
-    }
-    public void setNumeroRue(int numeroRue) {
-        this.numeroRue = numeroRue;
+    // Getters
+    public int getNumeroDeRue() {
+        return this.numeroDeRue;
     }
 
     public String getLibelleRue() {
         return this.libelleRue;
     }
-    public void setLibelleRue(String libelleRue) {
-        this.libelleRue = libelleRue;
-    }
 
-    public String getCodepostal() {
-        return this.codepostal;
-    }
-    public void setCodepostal(String codepostal) {
-        this.codepostal = codepostal;
+    public int getCodePostal() { // Type de retour int
+        return this.codePostal;
     }
 
     public String getVille() {
         return this.ville;
     }
-    public void setVille(String ville) {
-        this.ville = ville;
+
+    // toString() pour afficher l'adresse
+    @Override
+    public String toString() {
+        return numeroDeRue + " " + libelleRue + ", " + codePostal + " " + ville;
     }
 }
