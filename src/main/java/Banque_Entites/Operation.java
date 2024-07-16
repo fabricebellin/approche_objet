@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package Banque_Entites;
 
 public abstract class Operation {
     protected String date;

@@ -1,4 +1,4 @@
-package fr.diginamic.banque.entites;
+package Banque_Entites;
 
 public class Credit extends Operation {
 
