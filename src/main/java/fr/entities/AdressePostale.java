@@ -1,4 +1,4 @@
-package Banque_Entites.listes;
+package listes;
 
 public class AdressePostale {
 

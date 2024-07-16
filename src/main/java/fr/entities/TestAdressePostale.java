@@ -1,4 +1,4 @@
-package entities;
+package listes;
 
 //Les ArrayList permettent de gérer des tableaux à grandeur dynamique sur Java
 import java.util.ArrayList;

@@ -1,6 +1,4 @@
-package fr.entities.listes;
-
-import fr.listes.Ville;
+package fr.listes;
 
 public class TestVilles {
 

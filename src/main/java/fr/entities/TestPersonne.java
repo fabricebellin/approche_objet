@@ -1,4 +1,4 @@
-package entities2;
+package listes;
 
 import entities2.Personne;
 import java.util.ArrayList;
