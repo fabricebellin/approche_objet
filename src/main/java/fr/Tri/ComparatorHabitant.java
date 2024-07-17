@@ -1,4 +1,4 @@
-package tri;
+package Tri;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package tri;
+package Tri;
 
 public class Ville {
 
