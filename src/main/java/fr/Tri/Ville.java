@@ -41,10 +41,10 @@ public class Ville {
 		if(this.nbHabitants > o.getNbHabitants()) {
 			result = 1;
 		}
-		if(this.nbHabitants < o.getNbHabitants()) {
+		else if(this.nbHabitants < o.getNbHabitants()) {
 			result = -1;
 		}
-		return result;
+		return 0;
 	}
 	
 
