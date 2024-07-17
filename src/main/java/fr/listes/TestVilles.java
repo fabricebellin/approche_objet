@@ -16,25 +16,31 @@ public class TestVilles {
         villes.add(new Ville("Marseille", 850700,Continent.EUROPE ));
         villes.add(new Ville("Tarbes", 40600,Continent.EUROPE ));
 
-        System.out.println("Liste des villes:" + villes);
-
-        // Recherche de la ville la plus peuplée
-        Ville villePlusPeuplee = villes.stream().max(Comparator.comparingInt(Ville::getNbHabitants)).orElse(null);
-        System.out.println("La ville la plus peuplée est : " + villePlusPeuplee + ".");
-
-        // Suppression de la ville la moins peuplée
-        Ville villeMoinsPeuplee = villes.stream().min(Comparator.comparingInt(Ville::getNbHabitants)).orElse(null);
-        villes.remove(villeMoinsPeuplee);
-
-        // Modification des villes de plus de 100 000 habitants
-        villes.forEach(ville -> {
-            if (ville.getNbHabitants() > 100000) {
-                ville.setNom(ville.getNom().toUpperCase());
+        Ville villaMax = villes.get(0);
+        for (ville ville : villes){
+            if (ville.getPopulation()>villeMax.getPopulation()){
+                villeMax = ville;
             }
-        });
 
-        // Affichage de la liste résultante
-        System.out.println("Liste des villes après modifications:");
-        villes.forEach(System.out::println);
-    }
-}
+            Ville villaMin = villes.get(0);
+            for (ville ville : villes){
+                if (ville.getPopulation()>villeMin.getPopulation()){
+                    villeMin = ville;
+                }
+
+            villes.remove(villeMin);
+
+           villes.forEach(ville -> system.out.println(ville));
+           System.out.println("------------");
+
+                for (ville ville : villes){
+                    if (ville.getPopulation()>=100000){
+                        ville.SetNom(ville.getNom().toUpperCase());
+
+                    }
+
+
+                }
+
+
+
