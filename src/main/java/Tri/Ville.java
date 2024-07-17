@@ -27,8 +27,6 @@ public class Ville {
     }
 
 
-
-
 	/*
 	//Tri sur le nom
 	@Override
