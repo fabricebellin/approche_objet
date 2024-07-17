@@ -26,16 +26,14 @@ public class Ville {
         return this.nom + " (" + this.nbHabitants + " habitants)";
     }
 
-	/*
+	
 	//Tri sur le nom
 	@Override
 	public int compareTo(Ville o) {
 		int result = this.nom.compareTo(o.getNom());
 		return result;
 	}
-	*/
-
-	/*
+	
 	//Tri sur le nb d'habitants
 	@Override
 	public int compareTo(Ville o) {
@@ -48,6 +46,6 @@ public class Ville {
 		}
 		return result;
 	}
-	*/
+	
 
 }
