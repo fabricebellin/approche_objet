@@ -26,6 +26,9 @@ public class Ville {
         return this.nom + " (" + this.nbHabitants + " habitants)";
     }
 
+
+
+
 	/*
 	//Tri sur le nom
 	@Override
