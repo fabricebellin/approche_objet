@@ -13,4 +13,4 @@ public class TestEnumeration {
         System.out.println(Saison.getSaison("Hiver"));
     }
 
-}}
+}
