@@ -1,4 +1,4 @@
-package Tri;
+package tri;
 
 import java.util.Comparator;
 
@@ -11,4 +11,3 @@ public class ComparatorNom implements Comparator<Ville>{
     }
 
 }
-

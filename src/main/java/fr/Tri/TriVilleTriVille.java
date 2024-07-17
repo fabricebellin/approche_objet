@@ -1,4 +1,4 @@
-package Tri;
+package tri;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,6 +34,4 @@ public class TriVille {
         }
         System.out.println();
     }
-
-
 }
