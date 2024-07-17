@@ -38,6 +38,7 @@ public class TestListeString {
 
         // Affichage de la liste résultante
         System.out.println("Liste après modifications: " + villes);
+
     }
 }
 
