@@ -9,5 +9,6 @@ public class ComparatorNom implements Comparator<Ville>{
         int result = o1.getNom().compareTo(o2.getNom());
         return result;
     }
+
 }
 

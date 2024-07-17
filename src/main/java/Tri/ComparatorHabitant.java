@@ -15,5 +15,6 @@ public class ComparatorHabitant implements Comparator<Ville> {
         }
         return result;
     }
+
 }
 
