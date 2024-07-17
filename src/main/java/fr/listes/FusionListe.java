@@ -29,6 +29,7 @@ public class FusionListe {
         for(int i=0; i<liste3.size(); i++) {
             System.out.println(liste3.get(i));
         }
+
     }
 
 }

@@ -21,6 +21,7 @@ public class TestEquals {
         System.out.println("\nComparaison de ville1 et ville4 avec == après assignation de ville4 à ville1:");
         System.out.println("ville1 et ville4 sont les mêmes objets: " + (ville1 == ville4));
     }
+
 }
 
 
